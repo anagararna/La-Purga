@@ -1,0 +1,32 @@
+@media only screen and (max-width:480px) {
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Inter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body{
+    background: linear-gradient(to bottom, #860101, rgb(7, 0, 0));
+}
+header{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boton{
+    margin-top: 1em;
+    width: 159px;
+    height: 51.87px;
+    left: 96px;
+    top: 351px;
+    border-radius: 20px;
+    background:linear-gradient(to bottom, #d4b311, rgb(255, 179, 3)); 
+    font-family: "Inter sans-serif";
+}
+}

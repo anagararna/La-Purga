@@ -1,0 +1,86 @@
+@media only screen and (max-width:480px) {
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Inter&display=swap');
+    
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+body{
+    background: linear-gradient(to bottom, #860101, rgb(7, 0, 0));
+}
+
+.page-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:1em;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    margin: 0px;
+}
+
+.logo-hijo{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.input-container{
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.yourname-button{
+    width: 79px;
+    height: 23px;
+    left: 102px;
+    top: 107px;
+    background: linear-gradient(180deg, #ED0000 45.83%, rgba(221, 0, 0, 0) 100%);
+    border-radius: 2px;
+    }
+
+.kill-button{
+    width: 159px;
+    height: 51.87px;
+    left: 96px;
+    top: 351px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+.listas-container{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.lista-alive-container {
+    width: 136px;
+    height: 223px;
+    left: 32px;
+    top: 417px;
+    background: linear-gradient(180deg, #FFE600 0%, rgba(255, 230, 0, 0) 138.12%);
+    }
+
+.lista-dead-container {
+    width: 136px;
+    height: 223px;
+    left: 32px;
+    top: 417px;
+    background: linear-gradient(180deg, #FFE600 0%, rgba(255, 230, 0, 0) 138.12%);
+    }
+
+
+
+
+
+
+}

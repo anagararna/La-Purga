@@ -1,0 +1,78 @@
+@media (max-width:360px) and (orientation:portrait),(min-width:320px) {
+    @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Inter&display=swap');
+    
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        border: none;
+        outline: none;
+    }
+    body{
+        width: 380px;
+        height:100%vh;
+        background: linear-gradient (to bottom, #860101, rgb(7, 0, 0));
+    }
+    header{
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    a button{
+        margin-top: 1em;
+        width: 159px;
+        height: 51.87px;
+        border-radius: 20px;
+        background:linear-gradient(to bottom, #d4b311, rgb(255, 179, 3)); 
+        font-family: "Inter sans-serif";
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
+        transition: all ease 0.5s;
+    }
+    a button:after,
+    a button:before{
+        width: 80px;
+        height: 200px;
+        content: '';
+        display: block;
+        background: rgba(255,255,255,0.5);
+        transform: rotate(45deg);
+        top: -60px;
+        position: absolute;
+        transition: none;
+        right:-45%;
+        cursor: pointer;
+    }
+    a button:before{
+        left: -48%;
+    }
+     
+    a button:hover{
+        text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+        background:#a52727
+    }
+     
+    a button:hover:after,
+    a button:hover:before{
+        transform: rotate(45deg), scaleX(130%);
+        background: rgba(255,255,255,0.1);
+        transition: all ease 0.5s;
+    }
+     
+    a button:hover:after{
+        right: 130%;
+    }
+     
+    a button:hover:before{
+        left: 13 button
+
+    }
+    main img{
+        width: 77%;
+        height: 77%;
+    }
+}
+    

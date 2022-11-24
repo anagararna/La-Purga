@@ -4,29 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/jackpot.css" media="only screen and (max-width:480px)">
+    <link
+      rel="stylesheet"
+      href="./styles/jackpot.css"
+      media="only screen and (max-width:480px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/jackpotHorizontal.css"
+      media="only screen 
+    and (max-width: 643px) and (orientation:landscape) "
+    />
     <title>Purga Coder</title>
-
-<body>
-    <header class="logo">
-        <img src="./images/LOGO.png" alt="LOGO" class="logo">
-    </header>
-    <main class="page-container">
+    <body>
+      <div class="page-container">
+        <header class="logo">
+          <img src="./images/LOGO.png" alt="LOGO" class="logo-image" />
+        </header>
         <div class="input-container">
-            <button class="yourname-button">YOUR NAME</button>
-            <button class="submit-button">SUBMIT</button>
+          <input type="text" name="YOUR NAME" class="yourname-button" placeholder="YOUR NAME"></input>
+          <button class="submit-button">SUBMIT</button>
         </div>
         <div class="tragaperras-container">
-            <img src="./images/JACKPOT DE VERDAD.png" alt="jackpot">
+          <img
+            src="./images/JACKPOT DE VERDAD.png"
+            alt="jackpot"
+            class="jackpot"
+          />
+          <img
+            src="./images/ESTRELLAS.png"
+            alt="estrellas"
+            width="267px"
+            class="estrellas"
+          />
         </div>
         <div class="boton-matar">
-            <button class="kill-button">LET'S KILL SOMEONE</button>
+          <button class="kill-button">LET'S KILL SOMEONE</button>
         </div>
         <div class="listas-container">
-            <div class="lista-alive-container">
-            </div>
-            <div class="lista-dead-container">
-            </div>
+          <div class="lista-alive-container">
+            <h3>STILL ALIVE</h3>
+          </div>
+          <div class="lista-dead-container">
+            <h3>DEAD CODERS</h3>
+          </div>
         </div>
-    </main>
-</body>
+      </div>
+    </body>
+  </head>
+</html>

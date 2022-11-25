@@ -14,8 +14,7 @@
     border: none;
     outline: none;
 }
-html, body 
-{ 
+html, body{ 
  height: 100%;
  overflow: hidden
 }
@@ -29,13 +28,21 @@ html, body
     width: 85%;
 
 }
+.boton_logo{
+    margin-right: 10%;
+    cursor: pointer;
+    background: none;
+    width: 275px;
+}
+
 .parca{
     width: 77%;
-    height: 80%;
+    height: 100%;
    
 }
 .parca {
-    width:77%;
+    width: 77%;
+    height: 100%;
     animation-duration: 3s;
     animation-name: slidein;
 }
@@ -48,6 +55,10 @@ html, body
     margin-left: 0%;
     width: 100%;
   }
+}
+
+#au{
+    display: none;
 }
 
  header{ 

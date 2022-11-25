@@ -6,16 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/jackpot.css" media="only screen and (max-width:480px)">
     <title>Purga Coder</title>
+    <script src="tragaperras.js"></script>
+</head>
 
 <body>
     <div class="page-container">
         <header class="logo">
             <img src="./images/LOGO.png" alt="LOGO" class="logo" width="100px">
         </header>
-        <div class="input-container">
-            <input type="text" name="YOUR NAME" class="yourname-button" placeholder="YOUR NAME"></input>
-            <button class="submit-button"><b>SUBMIT</b></button>
-        </div>
+        <form class="input-container">
+            <input id="nombre" type="text" name="YOUR NAME" class="yourname-button" placeholder="YOUR NAME"/>
+            <button onclick="insertarNombre(event)" class="submit-button"><b>SUBMIT</b></button>
+            <button onclick="resetear(event)" class="submit-button"><b>RESET</b></button>
+        </form>
         <div class="tragaperras-container">
             <img src="./images/JACKPOT DE VERDAD.png" alt="jackpot" width="320px" class="jackpot">
             <img src="./images/ESTRELLAS.png" alt="estrellas" width="267px" class="estrellas">
@@ -24,10 +27,14 @@
         <div class="listas-container">
             <div class="lista-alive-container">
                 <h3>STILL ALIVE</h3>
+                <ul id="lista-nombres">
+                </ul>
             </div>
             <div class="lista-dead-container">
                 <h3>DEAD CODERS</h3>
             </div>
         </div>
     </div>
+
+
 </body>

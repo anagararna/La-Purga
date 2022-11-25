@@ -10,6 +10,12 @@
     height: fit-content;
 }
 
+html, body
+{
+ height: 100%;
+ overflow: hidden
+}
+
 body{
     background: linear-gradient(to bottom, #6c0202, rgb(7, 0, 0));
     height: 100vh;

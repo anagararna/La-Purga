@@ -81,9 +81,8 @@ body{
 .estrellas{
     position: absolute;
     margin-left: 14px;
+    animation-name:change;
 }
-
-
 
 .kill-button{
     width: 145px;

@@ -4,22 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/styles.css" media="only screen and (max-width:420px)">
-    <link rel="stylesheet" href="styles/indexVertical.css" media="(max-width:360px) and (orientation:portrait),(min-width:320px)">
-
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/indexVertical.css">
+    <!-- <link rel="stylesheet" href="styles/pc.css" media="only screen and (min-width: 1024px)"> -->
     <title>Purga Coder</title>
-
-  </head>
+  </head> 
+  
   <body>
-    
-    <header>
-      <img src="images/LOGO.png" alt="LOGO" class="logo">
-      <a href="jackpot.html">
-      <button class="boton">PRESS TO START</button></a>
-    </header>
-    <main>
-      <img src="images/parca_bien.png" alt="parca">
-    </main>
-
+    <div class="grid-container">
+      <header>
+        <button class="boton_logo">
+          <audio controls onclick="click" id="au">
+            <source src="/audio/audioIndex.mp3" type="audio/mp3">
+            Tu navegador no soporta HTML5.
+          </audio>
+          <img src="images/LOGO.png" alt="LOGO" class="logo">
+        </button>
+        <a href="jackpot.html">
+        <button class="boton">PRESS TO START</button></a>
+      </header>
+      <main>
+        <img src="images/parca_bien.png" alt="parca">
+      </main>
+      <script src="/scripts/script.js"></script>
+    </div>
   </body>
 </html>

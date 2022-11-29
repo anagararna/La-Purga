@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/jackpot.css" media="only screen and (max-width:480px)">
     <title>Purga Coder</title>
-    <script src="tragaperras.js"></script>
+    
 </head>
 
 <body>
@@ -22,12 +22,23 @@
         <div class="tragaperras-container">
             <img src="./images/JACKPOT DE VERDAD.png" alt="jackpot" width="320px" class="jackpot">
             <img src="./images/ESTRELLAS.png" alt="estrellas" width="267px" class="estrellas">
+            <section id="ventanas">
+                <div id="ventana1" class="ventana1">
+                    <img name="imagen" id="asesinos" class="asesinos">
+                </div>
+                <div id="ventana2" class="ventana2">
+                    <img name="muertes" id="muertes" class="muertes">
+                </div>
+                <div id="ventana3" class="ventana3">
+                    <p id="coders" class="coders" name="coders"></p>
+                </div>
+            </section> 
         </div>
-        <button class="kill-button"><b>LET'S KILL SOMEONE</b></button>
+        <button onclick="killSomeone(event)" class="kill-button"><b>LET'S KILL SOMEONE</b></button>
         <div class="listas-container">
             <div class="lista-alive-container">
                 <h3>STILL ALIVE</h3>
-                <ul id="lista-nombres">
+                <ul id="lista-nombres" class="listaCoders">
                 </ul>
             </div>
             <div class="lista-dead-container">
@@ -36,5 +47,15 @@
         </div>
     </div>
 
+    <!-- <div id="velo">
+        <div id="pop_up">
+            <img src="/images/pop_up.png" width="350px">
+            <div id="mensaje">MENSAJE</div>
+            <div class="boton">Try Again</div>
+        </div>
+    </div>
+    <audio id="sonido" src="argi-giant-metal-press-65607.mp3"></audio> -->
 
+    <script src="tragaperras.js"></script>
 </body>
+</html>

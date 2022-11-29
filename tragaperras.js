@@ -21,7 +21,7 @@ function resetearLista(event){
 
 let asesinos = ["images/asesinos/abuelo.png", "images/asesinos/caminante.png", "images/asesinos/caroline.png", "images/asesinos/del-pozo.png", "images/asesinos/elon.png", "images/asesinos/fredy.png", "images/asesinos/patricio.png", "images/asesinos/planta.png", "images/asesinos/trump.png", "images/asesinos/vold.png"]
 let muertes = ["images/Muertes/briefing.jfif", "images/Muertes/cosquillas.jfif", "images/Muertes/donunts.jfif", "images/Muertes/git.jfif", "images/Muertes/js.jfif", "images/Muertes/luz.jfif", "images/Muertes/maceta.jfif", "images/Muertes/montaña.jfif", "images/Muertes/platano.jfif", "images/Muertes/wc.jfif"]
-let coders = ????
+// let coders = ????
 
 
 function killSomeone(event){
@@ -33,7 +33,7 @@ function killSomeone(event){
     let indiceMuertes = Math.floor(Math.random() * 9);
     document.getElementById("muertes").src=muertes[indiceMuertes]
 
-    let indiceCoders = Math.floor(Math.random() * 9);
-    document.getElementById("coders").src=coders[indiceCoders]
+    // let indiceCoders = Math.floor(Math.random() * 9);
+    // document.getElementById("coders").src=coders[indiceCoders]
 
 }

@@ -4,73 +4,77 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="./styles/jackpot.css"
-      media="only screen and (max-width:480px)"
-    />
-    <link
-      rel="stylesheet"
-      href="./styles/jackpotHorizontal.css"
-      media="only screen 
-    and (max-width: 643px) and (orientation:landscape) "
-    />
-    <link
-    rel="stylesheet"
-    href="./styles/jackpotHorizontalLarge.css"
-    media="only screen and
-    (max-width: 1920px)"
-    />
+    <link rel="stylesheet" href="./styles/jackpot.css" />
+    <link rel="stylesheet" href="./styles/jackpotHorizontal.css"/>
+    <link rel="stylesheet" href="./styles/jackpotHorizontalLarge.css" media="only screen and (max-width:1328px)" />
     <title>Purga Coder</title>
-    
-</head>
-
-<body>
+  </head>
+  <body>
     <div class="page-container">
-        <header class="logo">
-            <img src="./images/LOGO.png" alt="LOGO" class="logo" width="100px">
-        </header>
-        <form class="input-container">
-            <input id="nombre" type="text" name="YOUR NAME" class="yourname-button" placeholder="YOUR NAME"/>
-            <button onclick="insertarNombre(event)" class="submit-button"><b>SUBMIT</b></button>
-            <button onclick="resetear(event)" class="submit-button"><b>RESET</b></button>
-        </form>
-        <div class="tragaperras-container">
-          <img
-            src="./images/JACKPOT DE VERDAD.png"
-            alt="jackpot" width="320px" class="jackpot">
-            <img src="./images/ESTRELLAS.png" alt="estrellas" width="267px" class="estrellas">
-            <section id="ventanas">
-                <div id="ventana1" class="ventana1">
-                    <img name="imagen" id="asesinos" class="asesinos">
-                </div>
-                <div id="ventana2" class="ventana2">
-                    <img name="muertes" id="muertes" class="muertes">
-                </div>
-                <div id="ventana3" class="ventana3">
-                    <p id="coders" class="coders" name="coders"></p
-            class="jackpot"
-          />
-          <img
-            src="./images/ESTRELLAS.png"
-            alt="estrellas"
-            width="267px"
-            class="estrellas"
-          />
-                </div>
-          </section> 
+      <header class="logo">
+        <img src="./images/LOGO.png" alt="LOGO" class="logo" width="100px" />
+      </header>
+      <section class="section-container">
+        <div class="wrapper-container">
+          <div class="form-container">
+            <form class="input-container">
+              <input
+                id="nombre"
+                type="text"
+                name="YOUR NAME"
+                class="yourname-button"
+                placeholder="YOUR NAME"
+              />
+              <button onclick="insertarNombre(event)" class="submit-button">
+                <b>SUBMIT</b>
+              </button>
+              <button onclick="resetear(event)" class="submit-button">
+                <b>RESET</b>
+              </button>
+            </form>
+            <button onclick="killSomeone(event)" class="kill-button kill-button-md">
+              <b>LET'S KILL SOMEONE</b>
+            </button>
+          </div>
+          <div class="tragaperras-container">
+            <img
+              src="./images/JACKPOT DE VERDAD.png"
+              alt="jackpot"
+              width="320px"
+              class="jackpot"
+            />
+            <img
+              src="./images/ESTRELLAS.png"
+              alt="estrellas"
+              width="267px"
+              class="estrellas"
+            />
+            <div id="ventanas">
+              <div id="ventana1" class="ventana1">
+                <img name="imagen" id="asesinos" class="asesinos" />
+              </div>
+              <div id="ventana2" class="ventana2">
+                <img name="muertes" id="muertes" class="muertes" />
+              </div>
+              <div id="ventana3" class="ventana3">
+                <p id="coders" class="coders" name="coders"></p>
+              </div>
+            </div>
+          </div>
         </div>
-        <button onclick="killSomeone(event)" class="kill-button"><b>LET'S KILL SOMEONE</b></button>
+        <button onclick="killSomeone(event)" class="kill-button kill-button-sm">
+          <b>LET'S KILL SOMEONE</b>
+        </button>
         <div class="listas-container">
-            <div class="lista-alive-container">
-                <h3>STILL ALIVE</h3>
-                <ul id="lista-nombres" class="listaCoders">
-                </ul>
-            </div>
-            <div class="lista-dead-container">
-                <h3>DEAD CODERS</h3>
-            </div>
+          <div class="lista-alive-container">
+            <h3>STILL ALIVE</h3>
+            <ul id="lista-nombres" class="listaCoders"></ul>
+          </div>
+          <div class="lista-dead-container">
+            <h3>DEAD CODERS</h3>
+          </div>
         </div>
+      </section>
     </div>
 
     <!-- <div id="velo">
@@ -83,5 +87,5 @@
     <audio id="sonido" src="argi-giant-metal-press-65607.mp3"></audio> -->
 
     <script src="tragaperras.js"></script>
-</body>
+  </body>
 </html>

@@ -1,32 +1,145 @@
-@media only screen and (max-width:480px) {
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Inter&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Inter&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    border: none;
-    outline: none;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        border: none;
+        outline: none;
+    }
 
-body{
-    background: linear-gradient(to bottom, #860101, rgb(7, 0, 0));
-}
-header{
-    margin-top: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.boton{
-    margin-top: 1em;
-    width: 159px;
-    height: 51.87px;
-    left: 96px;
-    top: 351px;
-    border-radius: 20px;
-    background:linear-gradient(to bottom, #d4b311, rgb(255, 179, 3)); 
-    font-family: "Inter sans-serif";
-}
-}
+    html,
+    body {
+        height: 100%;
+        overflow: hidden
+    }
+
+    body {
+        background: linear-gradient(to bottom, #860101, rgb(7, 0, 0));
+    }
+
+    .logo {
+        width: 85%;
+    }
+
+    .boton_logo {
+        cursor: pointer;
+        background: none;
+        width: 275px;
+    }
+
+    .parca {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 80%;
+        height: 70%;
+        animation-duration: 3s;
+        animation-name: slidein;
+    }
+
+    @keyframes slidein {
+        from {
+            left: -100%;
+        }
+
+        to {
+            margin-left: 0;
+        }
+    }
+
+    #au {
+        display: none;
+    }
+
+    header {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton {
+        margin-right: 28%;
+        margin-top: 1em;
+        width: 159px;
+        height: 51.87px;
+        left: 96px;
+        top: 351px;
+        border-radius: 20px;
+        background: linear-gradient(to bottom, #d4b311, rgb(255, 179, 3));
+        font-family: "Inter sans-serif";
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+        transition: all ease 0.5s;
+    }
+
+    .boton:after,
+    .boton:before {
+        width: 80px;
+        height: 200px;
+        display: block;
+        transform: rotate(45deg);
+        top: -60px;
+        position: absolute;
+        transition: none;
+        right: -45%;
+        cursor: pointer;
+    }
+
+    .boton:before {
+        left: -48%;
+    }
+
+    .boton:hover {
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+        background: #a52727
+    }
+
+    .boton:hover:after,
+    .boton:hover:before {
+        transform: rotate(45deg), scaleX(130%);
+        transition: all ease 0.5s;
+    }
+
+    @media screen and (min-width: 992px) {
+        .grid-container {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .parca {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50%;
+            height: auto;
+            animation-duration: 3s;
+            animation-name: slidein;
+        }
+
+        header {
+            width: 50%;
+            display: flex;
+        }
+
+        .logo {
+            width: 60%;
+            margin-left: 10rem;
+        }
+
+        .boton_logo {
+            cursor: pointer;
+            background: none;
+            width: 100%;
+        }
+
+        .boton {
+            width: 250px;
+            height: 80px;
+            font-size: 1.25rem;
+        }
+
+    }

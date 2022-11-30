@@ -27,19 +27,15 @@ function checkNotRepeat(coder, lista) {
     return lista.includes(coder)
 }
 
-/* function eliminarMuerta(asesinada) {
-    let lista_derecha = document.querySelectorAll("li");
-    console.log(lista_derecha)
-    for (let i in lista_derecha) {
-        if (asesinada == muerta) {
-            i.remove()
-            /*         let lista = document.getElementById("lista-nombres");
-                    lista.innerHTML -= opcion; */
-//         }
-//         else { }
-//     }
-// }  
-
+function eliminarMuerta(lista, muerta) {
+    for (let i = 0; i < lista.length; i++) {
+        if (lista[i] == muerta) {
+            const element = document.getElementById('coder_muerta');
+            element.remove()
+        }
+        else { }
+    }
+}
 
 function killSomeone(event) {
     event.preventDefault();
@@ -60,9 +56,9 @@ function killSomeone(event) {
         document.getElementById("coders").textContent = muerta
 
         let cadaver = document.getElementById("lista-muertas");
-        let lista_muerta = "<li> " + muerta + "</li>";
+        let lista_muerta = "<li id='coder_muerta'> " + muerta + "</li>";
         cadaver.innerHTML += lista_muerta
-        //eliminarMuerta(muerta)
+        //eliminarMuerta(cadaveres, muerta)
     }
     else { }
 }  

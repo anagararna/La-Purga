@@ -6,7 +6,7 @@ function insertarNombre(event) {
     let nombre = document.getElementById("nombre").value;
     if (nombre == "")
         alert("Debes añadir tu nombre")
-    let opcion = "<li> " + nombre + "</li>";
+    let opcion = `<li id="${nombre}">${nombre}</li>`;
     let lista = document.getElementById("lista-nombres");
     lista.innerHTML += opcion;
     coders.push(nombre)
@@ -27,13 +27,12 @@ function checkNotRepeat(coder, lista) {
     return lista.includes(coder)
 }
 
-function eliminarMuerta(lista, muerta) {
+function eliminarMuerta(lista, muerta, parent) {
     for (let i = 0; i < lista.length; i++) {
-        if (lista[i] == muerta) {
-            const element = document.getElementById('coder_muerta');
-            element.remove()
+        if (lista[i] === muerta) {
+            const element = document.getElementById(muerta);
+            parent.removeChild(element)
         }
-        else { }
     }
 }
 
@@ -56,9 +55,10 @@ function killSomeone(event) {
         document.getElementById("coders").textContent = muerta
 
         let cadaver = document.getElementById("lista-muertas");
-        let lista_muerta = "<li id='coder_muerta'> " + muerta + "</li>";
+        let nombres = document.getElementById("lista-nombres");
+        let lista_muerta = `<li id="dead-${muerta}">${muerta}</li>`;
         cadaver.innerHTML += lista_muerta
-        //eliminarMuerta(cadaveres, muerta)
+        eliminarMuerta(coders, muerta, nombres)
     }
     else { }
 }  

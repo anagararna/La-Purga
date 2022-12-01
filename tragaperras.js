@@ -61,4 +61,17 @@ function killSomeone(event) {
         eliminarMuerta(coders, muerta, nombres)
     }
     else { }
-}  
+}
+
+let boton = document.querySelector(".submit-button")
+boton.addEventListener("click", () => {
+    let etiquetaAudio = document.createElement("audio")
+    etiquetaAudio.setAttribute("src", "./audio/risa.mp3")
+    etiquetaAudio.play()
+})
+let logo = document.querySelector(".kill-button")
+logo.addEventListener("click", () => {
+    let etiquetaAudio = document.createElement("audio")
+    etiquetaAudio.setAttribute("src", "./audio/muerta.mp3")
+    etiquetaAudio.play()
+})

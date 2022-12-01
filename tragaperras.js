@@ -61,11 +61,9 @@ function killSomeone(event) {
         eliminarMuerta(coders, muerta, nombres)
     }
     else { };
-  
 
-  }
 
-   
+}
 
 let pulsar = document.querySelector(".submit-button")
 pulsar.addEventListener("click", () => {
@@ -81,16 +79,17 @@ logo.addEventListener("click", () => {
 })
 
 
-    let kills = document.getElementById('kills');
-    let velo = document.getElementById('velo');
-    let boton = document.getElementById('boton');
-
-    kills.addEventListener('click', () => {
-        velo.classList.add('show');
-    })
+let kills = document.getElementById('kills');
+let velo = document.getElementById('velo');
+let boton = document.getElementById('boton');
 
 
-    boton.addEventListener('click', () => {
-        velo.classList.remove('show');
-    });
+kills.addEventListener('click', () => {
+    velo.classList.add('show');
+})
+
+
+boton.addEventListener('click', () => {
+    velo.classList.remove('show');
+});
 

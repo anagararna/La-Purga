@@ -30,7 +30,7 @@
         margin-bottom: 1.5rem;
     }
 
-    .kill-button-sm {
+    .kill-button {
         display: none;
     }
 
@@ -100,13 +100,13 @@
         z-index: 4;
     }
 
-    .show{
+    .show {
         pointer-events: auto;
-        opacity: 1!important;
+        opacity: 1 !important;
     }
 
-    #boton{
-        pointer-events:auto;
+    #boton {
+        pointer-events: auto;
     }
 
     #pop_up {
@@ -269,13 +269,13 @@
         z-index: 4;
     }
 
-    .show{
+    .show {
         pointer-events: auto;
-        opacity: 1!important;
+        opacity: 1 !important;
     }
 
-    #boton{
-        pointer-events:auto;
+    #boton {
+        pointer-events: auto;
     }
 
     #pop_up {
@@ -346,13 +346,13 @@
         z-index: 4;
     }
 
-    .show{
+    .show {
         pointer-events: auto;
-        opacity: 1!important;
+        opacity: 1 !important;
     }
 
-    #boton{
-        pointer-events:auto;
+    #boton {
+        pointer-events: auto;
     }
 
     #pop_up {
@@ -368,4 +368,3 @@
     }
 
 }
-

@@ -63,14 +63,28 @@ function killSomeone(event) {
     else { };
   
 
-    }
+  }
 
+   
+
+let pulsar = document.querySelector(".submit-button")
+pulsar.addEventListener("click", () => {
+    let etiquetaAudio = document.createElement("audio")
+    etiquetaAudio.setAttribute("src", "./audio/risa.mp3")
+    etiquetaAudio.play()
+})
+let logo = document.querySelector(".kill-button")
+logo.addEventListener("click", () => {
+    let etiquetaAudio = document.createElement("audio")
+    etiquetaAudio.setAttribute("src", "./audio/muerta.mp3")
+    etiquetaAudio.play()
+})
 
 
     let kills = document.getElementById('kills');
     let velo = document.getElementById('velo');
     let boton = document.getElementById('boton');
-    
+
     kills.addEventListener('click', () => {
         velo.classList.add('show');
     })

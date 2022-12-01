@@ -73,12 +73,10 @@ function killSomeone(event) {
     
     kills.addEventListener('click', () => {
         velo.classList.add('show');
-    });
+    })
 
-    
+
     boton.addEventListener('click', () => {
         velo.classList.remove('show');
     });
 
-
-   

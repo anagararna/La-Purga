@@ -1,3 +1,4 @@
+/* MEDIA QUERIES PARA TABLET HORIZONTAL */
 @media screen and (max-width: 1024px) and (orientation: landscape) {
     .page-container {
         margin-top: 0;
@@ -83,8 +84,47 @@
         margin-left: 13%;
         gap: 4%;
     }
+
+    #velo {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        position: fixed;
+        background-color: rgba(0, 0, 0, .40);
+        top: 0;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+        opacity: 0;
+        z-index: 4;
+    }
+
+    .show{
+        pointer-events: auto;
+        opacity: 1!important;
+    }
+
+    #boton{
+        pointer-events:auto;
+    }
+
+    #pop_up {
+        position: relative;
+
+    }
+
+    #mensaje {
+        position: absolute;
+        top: 40%;
+        left: 41%;
+
+    }
+
+
 }
 
+/* MEDIA QUERIES PARA PANTALLA */
 @media screen and (min-width: 1024px) {
     .logo>img {
         width: 20vh;
@@ -213,8 +253,47 @@
         height: 100%;
         object-fit: cover;
     }
+
+    #velo {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        position: fixed;
+        background-color: rgba(0, 0, 0, .40);
+        top: 0;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+        opacity: 0;
+        z-index: 4;
+    }
+
+    .show{
+        pointer-events: auto;
+        opacity: 1!important;
+    }
+
+    #boton{
+        pointer-events:auto;
+    }
+
+    #pop_up {
+        position: relative;
+
+    }
+
+    #mensaje {
+        position: absolute;
+        top: 40%;
+        left: 41%;
+
+    }
+
 }
 
+
+/* MEDIA QUERIES PARA PANTALLA GRANDE */
 @media screen and (min-width: 1600px) {
 
     .lista-alive-container,
@@ -251,4 +330,42 @@
         margin-top: 220px;
         margin-left: 70px;
     }
+
+    #velo {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+        position: fixed;
+        background-color: rgba(0, 0, 0, .40);
+        top: 0;
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+        opacity: 0;
+        z-index: 4;
+    }
+
+    .show{
+        pointer-events: auto;
+        opacity: 1!important;
+    }
+
+    #boton{
+        pointer-events:auto;
+    }
+
+    #pop_up {
+        position: relative;
+
+    }
+
+    #mensaje {
+        position: absolute;
+        top: 40%;
+        left: 41%;
+
+    }
+
 }
+

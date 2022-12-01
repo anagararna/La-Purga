@@ -32,7 +32,21 @@ function killSomeone(event){
     let indiceMuertes = Math.floor(Math.random() * 9);
     document.getElementById("muertes").src=muertes[indiceMuertes]
 
-    // let indiceCoders = Math.floor(Math.random() * 9);
-    // document.getElementById("coders").src=coders[indiceCoders]
 
+    
 }
+let boton = document.querySelector(".submit-button")
+
+    boton.addEventListener("click", () => {
+      let etiquetaAudio = document.createElement("audio")
+      etiquetaAudio.setAttribute("src", "/audio/risa.mp3")
+      etiquetaAudio.play()
+    })
+
+let logo = document.querySelector(".kill-button")
+
+logo.addEventListener("click", () => {
+    let etiquetaAudio = document.createElement("audio")
+    etiquetaAudio.setAttribute("src", "/audio/muerta.mp3")
+    etiquetaAudio.play()
+})    

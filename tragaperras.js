@@ -62,7 +62,27 @@ function killSomeone(event) {
         let cadaver = document.getElementById("lista-muertas");
         let lista_muerta = "<li> " + muerta + "</li>";
         cadaver.innerHTML += lista_muerta
-        //eliminarMuerta(muerta)
+        eliminarMuerta(muerta)
     }
-    else { }
-}  
+    else { };
+  
+
+    }
+
+
+
+    let kills = document.getElementById('kills');
+    let velo = document.getElementById('velo');
+    let boton = document.getElementById('boton');
+    
+    kills.addEventListener('click', () => {
+        velo.classList.add('show');
+    });
+
+    
+    boton.addEventListener('click', () => {
+        velo.classList.remove('show');
+    });
+
+
+   

@@ -192,12 +192,6 @@
 
     }
 
-    p {
-        font-size: 20px;
-        color: black;
-    }
-
-
     #velo {
         display: flex;
         align-items: center;
@@ -208,6 +202,18 @@
         top: 0;
         height: 100%;
         width: 100%;
+        pointer-events: none;
+        opacity: 0;
+        z-index: 4;
+    }
+
+    .show{
+        pointer-events: auto;
+        opacity: 1!important;
+    }
+
+    #boton{
+        pointer-events:auto;
     }
 
     #pop_up {
@@ -247,4 +253,11 @@
     .boton:hover {
         background: -webkit-gradient(linear, 0 0, 0 100%, from(#ed1717), to(#750707));
         background: -moz-linear-gradient(top, #ed1717, #750707)
+    }
+
+    .coders{
+        margin-left: 15px;
+        margin-top: 25px;
+        -webkit-text-stroke: 0.2px rgb(246, 238, 1);
+        font-size: 21px;
     }

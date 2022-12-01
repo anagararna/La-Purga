@@ -1,0 +1,254 @@
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    .page-container {
+        margin-top: 0;
+    }
+
+    .section-container {
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .wrapper-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .input-container {
+        flex-direction: column;
+    }
+
+    .tragaperras-container {
+        margin-top: -2.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .kill-button-sm {
+        display: none;
+    }
+
+    .kill-button-md {
+        display: block;
+        margin: 0;
+    }
+
+    .listas-container {
+        margin-top: 0;
+        height: 80vh;
+        gap: 1rem;
+    }
+
+    .lista-alive-container,
+    .lista-dead-container {
+        height: 80vh;
+        overflow-y: scroll;
+        scrollbar-width: thin;
+    }
+
+    .lista-alive-container::-webkit-scrollbar .lista-dead-container::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .logo>img {
+        width: 20vh;
+        aspect-ratio: 1;
+    }
+
+    .jackpot {
+        width: 80vh;
+        aspect-ratio: 16/9;
+    }
+
+    .estrellas {
+        width: 65vh;
+        margin-left: 0;
+    }
+
+    .asesinos,
+    .muertes {
+        width: 100%;
+        aspect-ratio: 3/4;
+        z-index: 4;
+
+    }
+
+    #ventanas {
+        width: 60vh;
+        margin-left: 13%;
+        gap: 4%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .logo>img {
+        width: 20vh;
+        aspect-ratio: 1;
+    }
+
+    .page-container {
+        margin-top: 0;
+    }
+
+    .section-container {
+        position: relative;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        width: 100%;
+        align-items: baseline;
+    }
+
+    .wrapper-container {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 3rem;
+        position: absolute;
+        right: 4rem;
+    }
+
+    .form-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-top: 6rem;
+        height: 200px;
+        width: 90%;
+    }
+
+    .input-container {
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    .tragaperras-container {
+        margin-top: -2.5rem;
+        margin-bottom: 1.5rem;
+        width: 500px;
+    }
+
+    .jackpot {
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+
+    .estrellas {
+        width: 82%;
+        height: 270px;
+        margin-left: 0.5rem;
+    }
+
+    .kill-button {
+        width: 220px;
+        height: 60px;
+        font-size: 1.15rem;
+    }
+
+    .kill-button-sm {
+        display: none;
+    }
+
+    .kill-button-md {
+        display: block;
+        margin: 0;
+    }
+
+    .listas-container {
+        margin-top: 0;
+        gap: 1.5rem;
+        position: absolute;
+        left: 4rem;
+        top: 100%;
+    }
+
+    .lista-alive-container,
+    .lista-dead-container {
+        height: 80vh;
+        overflow-y: scroll;
+        scrollbar-width: thin;
+        width: 230px;
+    }
+
+    .lista-alive-container::-webkit-scrollbar .lista-dead-container::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .yourname-button,
+    .submit-button {
+        width: 150px;
+        height: 40px;
+    }
+
+    .yourname-button {
+        width: 200px;
+        padding-left: .5rem;
+
+    }
+
+    #ventanas {
+        width: 350px;
+        height: 140px;
+        gap: 12px;
+        margin-top: 110px;
+        margin-left: 60px;
+    }
+
+    #ventana1,
+    #ventana2,
+    #ventana3 {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 3/4;
+    }
+
+    #ventana1>img,
+    #ventana2>img,
+    #ventana3>img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+
+    .lista-alive-container,
+    .lista-dead-container {
+        width: 280px;
+    }
+
+    .tragaperras-container {
+        margin-top: -3.5rem;
+        margin-bottom: 1.5rem;
+        width: 700px;
+    }
+
+    .estrellas {
+        width: 80%;
+        height: 385px;
+        margin-left: 1.75rem;
+    }
+
+    .form-container {
+        padding-top: 14rem;
+    }
+
+    .kill-button {
+        width: 300px;
+        height: 80px;
+        font-size: 1.25rem;
+    }
+
+    #ventanas {
+        width: 530px;
+        height: 210px;
+        gap: 16px;
+        margin-top: 220px;
+        margin-left: 70px;
+    }
+}

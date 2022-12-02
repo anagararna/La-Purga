@@ -87,10 +87,11 @@ logo.addEventListener("click", () => {
 
     kills.addEventListener('click', () => {
         velo.classList.add('show');
-    })
-
+    });
+  
 
     boton.addEventListener('click', () => {
-        velo.classList.remove('show');
+    velo.classList.remove('show');
     });
 
+  

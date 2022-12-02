@@ -94,4 +94,9 @@ logo.addEventListener("click", () => {
     velo.classList.remove('show');
     });
 
-  
+    let pop = document.querySelector("#boton")
+    pop.addEventListener("click", () => {
+        let etiquetaAudio = document.createElement("audio")
+        etiquetaAudio.setAttribute("src", "./audio/nuclear.mp3")
+        etiquetaAudio.play()
+    })

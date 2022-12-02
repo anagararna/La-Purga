@@ -61,11 +61,11 @@ function killSomeone(event) {
         eliminarMuerta(coders, muerta, nombres)
     }
     else { };
-  
 
-  }
 
-   
+}
+
+
 
 let pulsar = document.querySelector(".submit-button")
 pulsar.addEventListener("click", () => {
@@ -81,17 +81,22 @@ logo.addEventListener("click", () => {
 })
 
 
-    let kills = document.getElementById('kills');
-    let velo = document.getElementById('velo');
-    let boton = document.getElementById('boton');
+let kills = document.getElementById('kills');
+let velo = document.getElementById('velo');
+let boton = document.getElementById('boton');
 
-    kills.addEventListener('click', () => {
-        velo.classList.add('show');
-    });
-  
+kills.addEventListener('click', () => {
+    velo.classList.add('show');
+});
 
-    boton.addEventListener('click', () => {
+
+boton.addEventListener('click', () => {
     velo.classList.remove('show');
-    });
+});
 
-  
+let pop = document.querySelector("#boton")
+pop.addEventListener("click", () => {
+    let etiquetaAudio = document.createElement("audio")
+    etiquetaAudio.setAttribute("src", "./audio/nuclear.mp3")
+    etiquetaAudio.play()
+})
